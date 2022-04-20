@@ -1,0 +1,1 @@
+This repository contains implementation of 1-bit sliding window protocol with piggybacked acknowledgement as flow control mechanism and cyclic redundancy check(CRC) algorithm as error control/detection mechanism.
