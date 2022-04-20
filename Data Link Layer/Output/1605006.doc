@@ -1,0 +1,84 @@
+In B_output: Sender B sends the Frame aaa data
+
+In A_input: Receiver A receives valid frame aaa data
+
+In A_input: Receiver A waits for Sending the acknowledged frame for aaa data
+
+In B_timerinterrupt: Sender B retransmits the last frame aaa data
+
+In A_input: Receiver A discards duplicate frame for aaa data......Drop
+
+In A_input: Receiver A sends negative acknowledgement(NACK)
+
+          TOLAYER1: frame being lost
+
+In A_output: Sender A sends the Frame bbb data
+
+In B_timerinterrupt: Sender B retransmits the last frame aaa data
+
+In B_input: Receiver B receives valid frame bbb data
+
+In B_input: Receiver B waits for Sending the acknowledged frame for bbb data
+
+In A_input: Receiver A discards duplicate frame for aaa data......Drop
+
+In A_input: Receiver A sends negative acknowledgement(NACK)
+
+In B_input: Sender B receives valid acknowledged frame
+
+In A_output: Sender A is not acknowledged yet........drop this ccc data
+
+In A_timerinterrupt: Sender A retransmits the last frame bbb data
+
+In B_input: Receiver B discards duplicate frame for bbb data......Drop
+
+In B_input: Receiver B sends negative acknowledgement(NACK)
+
+In A_input: Sender A receives valid acknowledged frame
+
+In B_output: Sender B sends the Frame ddd data
+
+In A_input: Receiver A receives valid frame ddd data
+
+In A_input: Receiver A waits for Sending the acknowledged frame for ddd data
+
+In B_output: Sender B is not acknowledged yet........drop this eee data
+
+In B_timerinterrupt: Sender B retransmits the last frame ddd data
+
+In A_input: Receiver A discards duplicate frame for ddd data......Drop
+
+In A_input: Receiver A sends negative acknowledgement(NACK)
+
+          TOLAYER3: frame being corrupted
+
+In B_input: Ignoring Acknowledgement.......drop
+
+In B_timerinterrupt: Sender B retransmits the last frame ddd data
+
+In A_input: Receiver A discards duplicate frame for ddd data......Drop
+
+In A_input: Receiver A sends negative acknowledgement(NACK)
+
+          TOLAYER3: frame being corrupted
+
+In B_input: Acknowledged frame got Corrupted.......drop
+
+In B_timerinterrupt: Sender B retransmits the last frame ddd data
+
+In A_input: Receiver A discards duplicate frame for ddd data......Drop
+
+In A_input: Receiver A sends negative acknowledgement(NACK)
+
+          TOLAYER3: frame being corrupted
+
+In B_input: Acknowledged frame got Corrupted.......drop
+
+In B_timerinterrupt: Sender B retransmits the last frame ddd data
+
+In A_input: Receiver A discards duplicate frame for ddd data......Drop
+
+In A_input: Receiver A sends negative acknowledgement(NACK)
+
+In B_input: Sender B receives valid acknowledged frame
+
